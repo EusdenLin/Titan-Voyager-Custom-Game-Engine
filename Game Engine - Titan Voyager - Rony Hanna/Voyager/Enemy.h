@@ -7,10 +7,12 @@
 #include "Terrain.h"
 #include "ParticleEmitter.h"
 
+
 class Enemy
 {
 public:
 	Enemy(Camera& cam);
+	Enemy(Camera& cam, int index);
 	~Enemy();
 
 	void Draw(short int id, short int enemyProjectileId);
@@ -37,6 +39,8 @@ private:
 	Camera m_camera;
 	glm::vec3 m_pos, m_velocity, m_fireDir, m_dronePos, m_oldPlayerPos;
  
+	int x, y;
+
 	float m_maximumSpeed, m_maximumDroneSpeed;
 	float m_attackDamage;
 	float m_deltaTime, m_currLifeTimer, m_respawnTimer;

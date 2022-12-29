@@ -1,9 +1,11 @@
+#include <iostream>
 #include "Enemy.h"
 #include "Renderer.h"
 #include "Utils.h"
 #include <cmath>
 #include "Player.h"
 #include "Audio.h"
+#include <iostream>
 
 Enemy::Enemy(Camera& cam) :
 	m_pos(Utils::GetInstance().RandomNumBetweenTwo(50.0f, 450.0f), 0.0f, Utils::GetInstance().RandomNumBetweenTwo(0.0f, 450.0f)),
@@ -34,6 +36,38 @@ Enemy::Enemy(Camera& cam) :
 						  "res/Shaders/Particle System Shaders/FragmentShader.fs", 20, "redOrb");
 }
 
+Enemy::Enemy(Camera& cam, int index) :
+	x((index / 5)),
+	y((index % 5)),
+	m_pos(200.0f + 10* ((index /5)% 5), 5.0f + 10 * (index %5), 200.0f),
+	m_maximumSpeed(0.0f),
+	m_maximumDroneSpeed(0.0f),
+	m_velocity(glm::vec3(0.0f, 0.0f, 0.0f)),
+	m_camera(cam),
+	m_health(1),
+	m_blastRadius(0.01f),
+	m_distance(0.0f),
+	m_shootDuration(0.0f),
+	m_evadeDurationCounter(0.0f),
+	m_damageTakenDuration(0.0f),
+	m_attackDamage(10.0f),
+	m_currLifeTimer(0.0f),
+	m_dead(false),
+	m_takingDamage(false),
+	m_evade(false),
+	m_evadeRight(false),
+	m_fire(false),
+	m_droneStatus(true),
+	m_damageToken(true),
+	m_canRespawn(true),
+	m_dronePos(m_pos)
+{
+	m_particleEffect.Init("res/Shaders/Particle System Shaders/VertexShader.vs",
+		"res/Shaders/Particle System Shaders/GeometryShader.geom",
+		"res/Shaders/Particle System Shaders/FragmentShader.fs", 20, "redOrb");
+}
+
+
 Enemy::~Enemy()
 {}
 
@@ -53,12 +87,12 @@ void Enemy::Draw(short int enemyId, short int enemyDroneId)
 		// Update the enemy's transform and particle system every frame and draw the enemy
 		Renderer::GetInstance().GetComponent(enemyId).SetTransform(m_pos, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f));
 		Renderer::GetInstance().GetComponent(enemyId).Draw(m_camera, glm::vec3(0.0f, 0.0f, 0.0f), false, Player::GetInstance().GetSpotLight());
-
-		if (m_currLifeTimer >= 0.2f)
-			m_particleEffect.Render(m_camera, m_deltaTime, glm::vec3(m_pos.x - 1.7f, m_pos.y + 4.5f, m_pos.z - 0.4f));
+		
+		//if (m_currLifeTimer >= 0.2f)
+			//m_particleEffect.Render(m_camera, m_deltaTime, glm::vec3(m_pos.x - 1.7f, m_pos.y + 4.5f, m_pos.z - 0.4f));
 
 		// Check if a small drone has been fired by the enemy
-		if (m_droneActive)
+		if (true)
 		{
 			// Update the small drone's transform per frame
 			Renderer::GetInstance().GetComponent(enemyDroneId).SetTransform(m_dronePos, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.25f, 0.25f, 0.25f));
@@ -121,7 +155,7 @@ void Enemy::Update(Terrain& terrain, Camera& cam, float dt)
 	{
 		m_deltaTime = dt;
 		m_camera = cam;
-		m_pos.y = terrain.GetHeightOfTerrain(m_pos.x, m_pos.z) + 5.0f;
+		//m_pos.y = terrain.GetHeightOfTerrain(m_pos.x, m_pos.z) + 5.0f;
 		m_distance = CalcDistance(m_pos, cam.GetCameraPos());
 		m_currLifeTimer += 0.1f * dt;
 
@@ -326,11 +360,11 @@ void Enemy::Respawn()
 {
 	if (m_canRespawn)
 	{
-		m_pos = glm::vec3(0.0f, 0.0f, 0.0f);
+		m_pos = glm::vec3(200.0f + 10 * x, 5.0f + 10 * y, 200.0f);
 		m_dronePos = m_pos;
 		m_respawnTimer += 1.0f * m_deltaTime;
 
-		if (m_respawnTimer >= 15.0f)
+		if (m_respawnTimer >= 3.0f)
 		{
 			// Restart some properties
 			m_respawnTimer = 0.0f;
@@ -343,10 +377,10 @@ void Enemy::Respawn()
 			m_dead = false;
 			m_droneSelfDestruct = false;
 			m_blastRadius = 0.01f;
-			m_health = 100;
+			m_health = 1;
 
 			// Set new spawn position
-			m_pos = glm::vec3(Utils::GetInstance().RandomNumBetweenTwo(50.0f, 520.0f), 0.0f, Utils::GetInstance().RandomNumBetweenTwo(0.0f, 650.0f));
+			m_pos = glm::vec3(200.0f + 10 * (x%5), 5.0f + 10 * y, 200.0f);
 		}
 	}
 }

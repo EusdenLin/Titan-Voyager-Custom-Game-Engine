@@ -166,7 +166,7 @@ void Terrain::CreateTerrainWithPerlinNoise()
 		for (unsigned int x = 0; x < 256; ++x)
 		{
 			const RGB color(noise.OctaveNoise(x / fx, y / fy, octaves));
-			tmp.push_back((float)color.r);
+			tmp.push_back(0); //fuck
 		}
 
 		m_vHeights.push_back(tmp);

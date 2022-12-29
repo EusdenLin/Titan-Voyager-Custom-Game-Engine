@@ -82,10 +82,10 @@ void Game::InitMeshes()
 
 	// Enemy ID registeration [100, 130] inclusively 
 	id = 100;
-	for (unsigned int i = 0; i < 30; ++i)
+	for (unsigned int i = 0; i < 26; ++i)
 	{
 		Renderer::GetInstance().InitMesh(SPHERE, "enemySphere", id++, enemyShader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f));
-		Enemy* enemy = new Enemy(m_camera);
+		Enemy* enemy = new Enemy(m_camera, i); //fuck
 		m_enemies.push_back(enemy);
 	}
 
@@ -290,7 +290,7 @@ void Game::RenderScene()
 	Renderer::GetInstance().GetComponent(HEALTH).Draw(m_cameraHUD);
 	Renderer::GetInstance().GetComponent(SATURN_RINGS).Draw(m_camera);
 	Renderer::GetInstance().GetComponent(SATURN).GetTransformComponent().GetRot().y += 2.0f * m_deltaTime;
-	Renderer::GetInstance().GetComponent(SATURN).Draw(m_camera, glm::vec3(-700.0f, 700.0f, 0.0f));
+	//Renderer::GetInstance().GetComponent(SATURN).Draw(m_camera, glm::vec3(-700.0f, 700.0f, 0.0f));
 
 	m_asteroid.DrawInstanced(m_camera);
 
@@ -307,7 +307,8 @@ void Game::RenderScene()
 	for (unsigned int i = 0; i < m_enemyCount; ++i)
 	{
 		// Check if this enemy unit can respawn (if the data transfer is at 100, then this enemy cannot respawn anymore)
-		m_enemies.at(i)->SetRespawnStatus(m_dataTransmitTimer < 100 ? true : false);
+		//m_enemies.at(i)->SetRespawnStatus(m_dataTransmitTimer < 100 ? true : false);
+		m_enemies.at(i)->SetRespawnStatus(true);
 		m_enemies.at(i)->Draw(enemyId, ENEMY_DRONE);
 		++enemyId;
 	}
@@ -369,6 +370,7 @@ void Game::UpdateGame()
 	if (m_dataTransmitTimer < 100)
 	{
 		// Increase total number of enemies over time
+		/*
 		m_enemySpawnTimer += 1.0f * m_deltaTime;
 
 		if (m_enemySpawnTimer >= 16.0f)
@@ -379,7 +381,8 @@ void Game::UpdateGame()
 			{
 				++m_enemyCount;
 			}
-		}
+		}*/
+		m_enemyCount =26;
 	}
 
 	// Update enemy units
