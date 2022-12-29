@@ -96,7 +96,7 @@ void Enemy::Draw(short int enemyId, short int enemyDroneId)
 		{
 			// Update the small drone's transform per frame
 			Renderer::GetInstance().GetComponent(enemyDroneId).SetTransform(m_dronePos, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.25f, 0.25f, 0.25f));
-			Renderer::GetInstance().GetComponent(enemyDroneId).Draw(m_camera);
+			//Renderer::GetInstance().GetComponent(enemyDroneId).Draw(m_camera);
 
 			// Check if the player is colliding with the drone
 			if (Physics::GetInstance().PointInSphere(m_camera, m_dronePos, 2.0f))

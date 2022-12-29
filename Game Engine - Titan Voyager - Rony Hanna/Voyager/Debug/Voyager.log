@@ -1,45 +1,4 @@
 ﻿  Enemy.cpp
 C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
 C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-  Engine.cpp
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-  Game.cpp
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(198,19): warning C4244: '正在初始化': 將 'Uint32' 轉換為 'float'，由於類型不同，可能導致資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(307,29): warning C4018: '<': signed/unsigned 不相符
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(317,29): warning C4018: '<': signed/unsigned 不相符
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(389,29): warning C4018: '<': signed/unsigned 不相符
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(449,30): warning C4018: '<': signed/unsigned 不相符
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(498,29): warning C4018: '<': signed/unsigned 不相符
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(579,4): warning C4065: switch 陳述式包含 'default'，但沒有 'case' 標籤
-  Mesh.cpp
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Mesh.cpp(78,79): warning C4244: '引數': 將 'float' 轉換為 'GLsizei'，由於類型不同，可能導致資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Mesh.cpp(119,23): warning C4244: '正在初始化': 將 'float' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Mesh.cpp(144,19): warning C4244: '正在初始化': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-  Physics.cpp
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Physics.cpp(40,24): warning C4244: '=': 將 'Sint32' 轉換為 'float'，由於類型不同，可能導致資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Physics.cpp(41,24): warning C4244: '=': 將 'Sint32' 轉換為 'float'，由於類型不同，可能導致資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Physics.cpp(172,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-  Player.cpp
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.cpp(55,15): warning C4834: 正在捨棄具有 'nodiscard' 屬性之函式的傳回值
-  Terrain.cpp
-  Weapon.cpp
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-  main.cpp
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-  正在產生程式碼...
-  LINK : 最後的累加連結找不到或未建置 C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe，正在執行完整連結
-SOIL.lib(image_DXT.obj) : warning LNK4099: 找不到 PDB 'SOIL.pdb' (有 'SOIL.lib(image_DXT.obj)' 或位於 'C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\SOIL.pdb')，當做沒有偵錯資訊，連結物件
-SOIL.lib(image_helper.obj) : warning LNK4099: 找不到 PDB 'SOIL.pdb' (有 'SOIL.lib(image_helper.obj)' 或位於 'C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\SOIL.pdb')，當做沒有偵錯資訊，連結物件
-SOIL.lib(SOIL.obj) : warning LNK4099: 找不到 PDB '' (有 'SOIL.lib(SOIL.obj)' 或位於 '')，當做沒有偵錯資訊，連結物件
-SOIL.lib(stb_image_aug.obj) : warning LNK4099: 找不到 PDB 'SOIL.pdb' (有 'SOIL.lib(stb_image_aug.obj)' 或位於 'C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\SOIL.pdb')，當做沒有偵錯資訊，連結物件
   Voyager.vcxproj -> C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe
