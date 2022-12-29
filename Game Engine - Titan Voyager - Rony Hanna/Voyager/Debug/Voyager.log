@@ -1,0 +1,105 @@
+﻿  Animation.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+  Atmosphere.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Atmosphere.cpp(83,61): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Audio.cpp
+  Camera.cpp
+  Cloth.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(25,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(27,30): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(37,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(39,30): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(41,10): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(44,10): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(47,10): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(47,37): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(50,10): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(50,37): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(56,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(58,30): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(60,10): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(63,10): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(66,10): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(66,37): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(69,10): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(69,37): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(80,30): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(82,10): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(104,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(106,30): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(231,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Cloth.cpp(233,30): warning C4018: '<': signed/unsigned mismatch
+  ClothParticle.cpp
+  Constraint.cpp
+  Debugger.cpp
+  DirectionalLight.cpp
+  Enemy.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+  Engine.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+  Font.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Font.cpp(64,24): warning C4838: conversion from 'FT_Pos' to 'GLuint' requires a narrowing conversion
+  Framebuffer.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+  Game.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(198,19): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(307,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(316,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(386,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(446,30): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(495,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(576,4): warning C4065: switch statement contains 'default' but no 'case' labels
+  GameObject.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+  main.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+  Mesh.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Mesh.cpp(78,79): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Mesh.cpp(119,23): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Mesh.cpp(144,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Model.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+  Particle.cpp
+  ParticleEmitter.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\ParticleEmitter.cpp(15,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\ParticleEmitter.cpp(66,31): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+  Generating Code...
+  Compiling...
+  PerlinNoise.cpp
+  Physics.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Physics.cpp(40,24): warning C4244: '=': conversion from 'Sint32' to 'float', possible loss of data
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Physics.cpp(41,24): warning C4244: '=': conversion from 'Sint32' to 'float', possible loss of data
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Physics.cpp(172,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Player.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.cpp(55,15): warning C4834: discarding return value of function with 'nodiscard' attribute
+  PointLight.cpp
+  Renderer.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+  ResourceManager.cpp
+  Shader.cpp
+  Shape.cpp
+  SpotLight.cpp
+  Terrain.cpp
+  Texture.cpp
+  Utils.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Utils.cpp(6,22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Weapon.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+  Generating Code...
+SOIL.lib(image_DXT.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(image_DXT.obj)' or at 'C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\SOIL.pdb'; linking object as if no debug info
+SOIL.lib(image_helper.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(image_helper.obj)' or at 'C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\SOIL.pdb'; linking object as if no debug info
+SOIL.lib(SOIL.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(SOIL.obj)' or at 'C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\SOIL.pdb'; linking object as if no debug info
+SOIL.lib(stb_image_aug.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(stb_image_aug.obj)' or at 'C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\SOIL.pdb'; linking object as if no debug info
+  Voyager.vcxproj -> C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe
