@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-﻿  Enemy.cpp
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+﻿  LINK : 最後的累加連結找不到或未建置 C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe，正在執行完整連結
+SOIL.lib(image_DXT.obj) : warning LNK4099: 找不到 PDB 'SOIL.pdb' (有 'SOIL.lib(image_DXT.obj)' 或位於 'C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\SOIL.pdb')，當做沒有偵錯資訊，連結物件
+SOIL.lib(image_helper.obj) : warning LNK4099: 找不到 PDB 'SOIL.pdb' (有 'SOIL.lib(image_helper.obj)' 或位於 'C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\SOIL.pdb')，當做沒有偵錯資訊，連結物件
+SOIL.lib(SOIL.obj) : warning LNK4099: 找不到 PDB 'SOIL.pdb' (有 'SOIL.lib(SOIL.obj)' 或位於 'C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\SOIL.pdb')，當做沒有偵錯資訊，連結物件
+SOIL.lib(stb_image_aug.obj) : warning LNK4099: 找不到 PDB 'SOIL.pdb' (有 'SOIL.lib(stb_image_aug.obj)' 或位於 'C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\SOIL.pdb')，當做沒有偵錯資訊，連結物件
   Voyager.vcxproj -> C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe
-=======
-﻿  Terrain.cpp
-C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Terrain.cpp(260,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  Voyager.vcxproj -> C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe
->>>>>>> shawn
