@@ -35,7 +35,7 @@ void Terrain::InitTerrain(char* vs, char* fs)
 {
 	m_terrainShader.CreateProgram(vs, fs);
 	//std::vector<char*> images{ "soil", "soil2", "grass", "soil4", "blendMap", "grassNormalMap" };
-	std::vector<char*> images{ "grass" };
+	std::vector<char*> images{ "soil2" };
 	m_terrainTexture.GenerateMultipleTextures(images);
 	//m_terrainTexture.GenerateTexture("grass");
 	
