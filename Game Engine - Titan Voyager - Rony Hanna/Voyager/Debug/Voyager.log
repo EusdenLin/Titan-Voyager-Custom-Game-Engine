@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 ﻿  Enemy.cpp
 C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
 C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
   Voyager.vcxproj -> C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe
+=======
+﻿  Terrain.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Terrain.cpp(260,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Voyager.vcxproj -> C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe
+>>>>>>> shawn

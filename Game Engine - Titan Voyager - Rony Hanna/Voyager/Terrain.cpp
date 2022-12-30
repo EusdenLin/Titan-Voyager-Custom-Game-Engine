@@ -34,8 +34,11 @@ Terrain::~Terrain()
 void Terrain::InitTerrain(char* vs, char* fs)
 {
 	m_terrainShader.CreateProgram(vs, fs);
-	std::vector<char*> images{ "soil", "soil2", "grass", "soil4", "blendMap", "grassNormalMap" };
+	//std::vector<char*> images{ "soil", "soil2", "grass", "soil4", "blendMap", "grassNormalMap" };
+	std::vector<char*> images{ "soil2" };
 	m_terrainTexture.GenerateMultipleTextures(images);
+	//m_terrainTexture.GenerateTexture("grass");
+	
 }
 
 // -------------------
@@ -160,13 +163,21 @@ void Terrain::CreateTerrainWithPerlinNoise()
 	const double fx = 256.0 / frequency;
 	const double fy = 256.0 / frequency;
 
+	float slope = 11;
+
 	std::vector<float> tmp;
-	for (unsigned int y = 0; y < 256; ++y)
+	for (unsigned int y = 0; y < m_terrainLength; ++y)
 	{
-		for (unsigned int x = 0; x < 256; ++x)
+		for (unsigned int x = 0; x < m_terrainWidth; ++x)
 		{
+<<<<<<< HEAD
 			const RGB color(noise.OctaveNoise(x / fx, y / fy, octaves));
 			tmp.push_back(0); //fuck
+=======
+			//const RGB color(noise.OctaveNoise(x / fx, y / fy, octaves));
+			//tmp.push_back((float)color.r);
+			tmp.push_back(0.0f);
+>>>>>>> shawn
 		}
 
 		m_vHeights.push_back(tmp);
@@ -190,25 +201,26 @@ void Terrain::CreateTerrainWithPerlinNoise()
 		terrainHeightOffsetBack = 0;
 		terrainHeightOffsetLeftSide -= 4;
 
-		if (i > 245)
+		if (i > m_terrainLength - slope)
 			terrainHeightOffsetRightSide += 4;
 
 		for (unsigned int j = 0; j < m_vHeights[0].size(); ++j)
 		{
-			if (i < 12)
+			/*
+			if (i < slope)
 			{
 				Vertices.push_back(glm::vec3(i * m_cellSpacing, m_vHeights[i][j] * m_fTerrainHeight + terrainHeightOffsetLeftSide, j * m_cellSpacing));
 			}
-			else if (i > 245)
+			else if (i > m_terrainLength - slope)
 			{
 				Vertices.push_back(glm::vec3(i * m_cellSpacing, m_vHeights[i][j] * m_fTerrainHeight + terrainHeightOffsetRightSide, j * m_cellSpacing));
 			}
-			else if (j < 12)
+			else if (j < slope)
 			{
 				Vertices.push_back(glm::vec3(i * m_cellSpacing, m_vHeights[i][j] * m_fTerrainHeight + terrainHeightOffsetFront, j * m_cellSpacing));
 				terrainHeightOffsetFront -= 4;
 			}
-			else if (j > 245)
+			else if (j > m_terrainWidth - slope)
 			{
 				terrainHeightOffsetBack += 4;
 
@@ -222,7 +234,8 @@ void Terrain::CreateTerrainWithPerlinNoise()
 				terrainHeightOffsetFront = 50;
 				Vertices.push_back(glm::vec3(i * m_cellSpacing, m_vHeights[i][j] * m_fTerrainHeight, j * m_cellSpacing));
 			}
-
+*/
+			Vertices.push_back(glm::vec3(i * m_cellSpacing, m_vHeights[i][j] * m_fTerrainHeight, j * m_cellSpacing));
 			//Vertices.push_back(glm::vec3(i * m_cellSpacing, m_vHeights[i][j] * m_fTerrainHeight, j * m_cellSpacing));
 			Textures.push_back(glm::vec2(i * 1.0f / m_vHeights.size(), j * 1.0f / m_vHeights[0].size()));
 			Normals.push_back(CalculateNormal(i, j));
@@ -249,10 +262,10 @@ void Terrain::CreateTerrainWithPerlinNoise()
 	{
 		for (unsigned int j = 0; j < m_vHeights[0].size(); ++j)
 		{
-			int vertexIndex = j + i * 256;
+			int vertexIndex = j + i * m_terrainWidth;
 			glm::vec3 v1 = Vertices[vertexIndex];
 
-			if (j < 255)
+			if (j < m_terrainWidth - 1)
 			{
 				glm::vec3 v2 = Vertices[vertexIndex + 1];
 				glm::vec3 result = v1 - v2;
@@ -401,7 +414,7 @@ void Terrain::Draw(Camera& _cam, DirectionalLight* directionLight, PointLight* l
 	m_terrainShader.SetInt("grassNormalMap", 5);
 
 	// Activate all the textures
-	for (unsigned int i = 0; i < 6; ++i)
+	for (unsigned int i = 0; i < 1; ++i)
 		m_terrainTexture.ActivateTextures(i);
 
 	// MVP transformation matrix

@@ -2,7 +2,11 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+<<<<<<< HEAD
       <FullPath>C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe</FullPath>
+=======
+      <FullPath>C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe</FullPath>
+>>>>>>> shawn
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
