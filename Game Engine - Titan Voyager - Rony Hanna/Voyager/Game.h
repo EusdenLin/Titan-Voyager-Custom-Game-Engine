@@ -69,6 +69,8 @@ private:
 	Cloth m_flag;
 	std::vector<Text> m_texts;
 	std::vector<Enemy*> m_enemies;
+	std::vector<int> dead_enemies;
+	std::vector<int> alive_enemies;
 
 private:
 	int m_mouseX, m_mouseY;

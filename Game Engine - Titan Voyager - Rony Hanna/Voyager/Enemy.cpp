@@ -39,7 +39,7 @@ Enemy::Enemy(Camera& cam) :
 Enemy::Enemy(Camera& cam, int index) :
 	x((index / 5)),
 	y((index % 5)),
-	m_pos(200.0f + 10* ((index /5)% 5), 5.0f + 10 * (index %5), 200.0f),
+	m_pos(235.0f + 10* ((index /5)% 5), 5.0f + 10 * (index %5), 250.0f),
 	m_maximumSpeed(0.0f),
 	m_maximumDroneSpeed(0.0f),
 	m_velocity(glm::vec3(0.0f, 0.0f, 0.0f)),
@@ -52,7 +52,7 @@ Enemy::Enemy(Camera& cam, int index) :
 	m_damageTakenDuration(0.0f),
 	m_attackDamage(10.0f),
 	m_currLifeTimer(0.0f),
-	m_dead(false),
+	m_dead(true),
 	m_takingDamage(false),
 	m_evade(false),
 	m_evadeRight(false),
@@ -360,11 +360,11 @@ void Enemy::Respawn()
 {
 	if (m_canRespawn)
 	{
-		m_pos = glm::vec3(200.0f + 10 * x, 5.0f + 10 * y, 200.0f);
+		m_pos = glm::vec3(235.0f + 10 * x, 5.0f + 10 * y, 250.0f);
 		m_dronePos = m_pos;
 		m_respawnTimer += 1.0f * m_deltaTime;
 
-		if (m_respawnTimer >= 3.0f)
+		if (m_respawnTimer >= 1000.0f)
 		{
 			// Restart some properties
 			m_respawnTimer = 0.0f;

@@ -2,6 +2,24 @@
 #include "Utils.h"
 #include "ResourceManager.h"
 
+#include <algorithm>
+#include <iostream>
+#include <vector>
+
+
+std::vector<int> randperm()
+{
+	std::vector<int> temp;
+	for (int i = 1; i < 26; ++i)
+	{
+		temp.push_back(i);
+	}
+
+	std::random_shuffle(temp.begin(), temp.end());
+
+	return temp;
+}
+
 std::vector<SDL_Event>& GetFrameEvents()
 {
 	static std::vector<SDL_Event> frame_events;
@@ -88,6 +106,25 @@ void Game::InitMeshes()
 		Enemy* enemy = new Enemy(m_camera, i); //fuck
 		m_enemies.push_back(enemy);
 	}
+
+
+
+	// 1~25: % 25+1
+
+	std::vector<int> temp = randperm();
+
+	m_enemies[temp.back()]->SetDeath(false);
+	alive_enemies.push_back(temp.back());
+	temp.pop_back();
+	m_enemies[temp.back()]->SetDeath(false);
+	alive_enemies.push_back(temp.back());
+	temp.pop_back();
+	m_enemies[temp.back()]->SetDeath(false);
+	alive_enemies.push_back(temp.back());
+	temp.pop_back();
+
+	dead_enemies = temp;
+
 
 	// Initialize game models
 	m_terrain.InitTerrain("res/Shaders/TerrainVertexShader.vs", "res/Shaders/TerrainFragmentShader.fs");
@@ -344,6 +381,22 @@ void Game::UpdateGame()
 {
 	m_camera.UpdateLookAt();
 	Player::GetInstance().Update(m_camera, m_terrain, m_deltaTime, GetFrameEvents());
+
+	if (m_enemies[alive_enemies[0]]->GetDeath() == true) {
+		m_enemies[dead_enemies.back()]->SetDeath(false);
+		std::swap(dead_enemies.back(), alive_enemies[0]);
+		std::random_shuffle(dead_enemies.begin(), dead_enemies.end());
+	}
+	else if (m_enemies[alive_enemies[1]]->GetDeath() == true) {
+		m_enemies[dead_enemies.back()]->SetDeath(false);
+		std::swap(dead_enemies.back(), alive_enemies[1]);
+		std::random_shuffle(dead_enemies.begin(), dead_enemies.end());
+	}
+	else if (m_enemies[alive_enemies[2]]->GetDeath() == true) {
+		m_enemies[dead_enemies.back()]->SetDeath(false);
+		std::swap(dead_enemies.back(), alive_enemies[2]);
+		std::random_shuffle(dead_enemies.begin(), dead_enemies.end());
+	}
 
 	if (Player::GetInstance().IsPlayerDead())
 	{
