@@ -75,6 +75,10 @@ void Weapon::Fire(Model& weapon, Camera& cam, float dt, bool& firing, bool& relo
 		glm::mat4 invViewMat = glm::inverse(cam.GetViewMatrix());
 		model = invViewMat * translation * rotation * scaleMat;
 		Renderer::GetInstance().GetComponent(8).Draw(model, cam, glm::vec3(0.0f, 0.0f, 0.0f));
+
+
+
+
 		m_currFireRateTime = 0.0f;
 	}
 }

@@ -112,7 +112,7 @@ bool Physics::RaySphere(Camera& cam, glm::vec3 RayDirWorld, double SphereRadius,
 	// work out components of quadratic
 	glm::vec3 v = glm::vec3(x, y, z) - cam.GetCameraPos();
 	long double a = glm::dot(RayDirWorld, RayDirWorld);
-	long double b = 2.0 * glm::dot(v, RayDirWorld);
+	long double b = -2.0 * glm::dot(v, RayDirWorld);
 	long double c = glm::dot(v, v) - SphereRadius * SphereRadius;
 	long double b_squared_minus_4ac = b * b + (-4.0) * a * c;
 
@@ -129,8 +129,8 @@ bool Physics::RaySphere(Camera& cam, glm::vec3 RayDirWorld, double SphereRadius,
 
 		if (x1 >= 0.0 || x2 >= 0.0)
 			return true;
-		if (x1 < 0.0 || x2 >= 0.0)
-			return true;
+		//if (x1 < 0.0 || x2 >= 0.0)
+		//	return true;
 	}
 
 	// No real roots

@@ -98,11 +98,13 @@ void Game::InitMeshes()
 	Renderer::GetInstance().InitMesh(QUAD, "playerDead", ++id, hudShader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(17.0f, 17.0f, 17.0f));
 	Renderer::GetInstance().InitMesh(QUAD, "victorious", ++id, hudShader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(17.0f, 17.0f, 17.0f));
 
+	Renderer::GetInstance().InitMesh(SPHERE, "cyan", ++id, unlitShader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f));
+
 	// Enemy ID registeration [100, 130] inclusively 
 	id = 100;
 	for (unsigned int i = 0; i < 26; ++i)
 	{
-		Renderer::GetInstance().InitMesh(SPHERE, "enemySphere", id++, enemyShader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f));
+		Renderer::GetInstance().InitMesh(SPHERE, "enemySphere", id++, enemyShader, glm::vec3(2.0f, -2.5f, -2.5f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f));
 		Enemy* enemy = new Enemy(m_camera, i); //fuck
 		m_enemies.push_back(enemy);
 	}

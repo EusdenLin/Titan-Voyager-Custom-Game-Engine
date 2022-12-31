@@ -33,6 +33,7 @@ public:
 	inline Animation& GetAnimComponent() { return m_animator; }
 	inline Model& GetModel() { return m_model; }
 
+	inline float GetCurrFireRateTime() { return m_currFireRateTime; }
 private:
 	float m_currFireRateTime, m_fireRate, m_currReloadTime, m_maxReloadTimer;
 	int m_ammoCount, m_maxAmmo, m_damage;
