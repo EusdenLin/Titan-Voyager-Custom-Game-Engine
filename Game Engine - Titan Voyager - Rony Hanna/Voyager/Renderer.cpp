@@ -68,7 +68,7 @@ bool Renderer::InitSDLAndOpenGL()
 
 	SetWindowAttribs();
 
-	window = SDL_CreateWindow("Titan Voyager", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, m_screenWidth, m_screenHeight, SDL_WINDOW_OPENGL);
+	window = SDL_CreateWindow("BattleBrian Trainer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, m_screenWidth, m_screenHeight, SDL_WINDOW_OPENGL);
 	if (window == nullptr)
 	{
 		std::cerr << "ERROR: SDL could not create window, error: " << SDL_GetError() << "\n";

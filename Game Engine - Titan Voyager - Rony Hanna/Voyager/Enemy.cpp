@@ -39,7 +39,7 @@ Enemy::Enemy(Camera& cam) :
 Enemy::Enemy(Camera& cam, int index) :
 	x((index / 5)),
 	y((index % 5)),
-	m_pos(235.0f + 10* ((index /5)% 5), 5.0f + 10 * (index %5), 250.0f),
+	m_pos(235.0f + 10* ((index /5)% 5), 5.0f + 10 * (index %5), 260.0f),
 	m_maximumSpeed(0.0f),
 	m_maximumDroneSpeed(0.0f),
 	m_velocity(glm::vec3(0.0f, 0.0f, 0.0f)),
@@ -85,7 +85,7 @@ void Enemy::Draw(short int enemyId, short int enemyDroneId)
 			Renderer::GetInstance().GetComponent(enemyId).GetShaderComponent().SetBool("damaged", false);
 
 		// Update the enemy's transform and particle system every frame and draw the enemy
-		Renderer::GetInstance().GetComponent(enemyId).SetTransform(m_pos, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f));
+		Renderer::GetInstance().GetComponent(enemyId).SetTransform(m_pos, glm::vec3(0.0f, 100.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f));
 		Renderer::GetInstance().GetComponent(enemyId).Draw(m_camera, glm::vec3(0.0f, 0.0f, 0.0f), false, Player::GetInstance().GetSpotLight());
 		
 		//if (m_currLifeTimer >= 0.2f)

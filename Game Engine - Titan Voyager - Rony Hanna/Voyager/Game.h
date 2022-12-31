@@ -71,6 +71,7 @@ private:
 	std::vector<Enemy*> m_enemies;
 	std::vector<int> dead_enemies;
 	std::vector<int> alive_enemies;
+	int m_hit;
 
 private:
 	int m_mouseX, m_mouseY;

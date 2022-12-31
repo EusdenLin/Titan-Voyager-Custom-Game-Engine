@@ -29,9 +29,10 @@ std::vector<SDL_Event>& GetFrameEvents()
 Game::Game() :
 	m_deltaTime(0.0f),
 	m_gameState(GameState::MAIN_MENU),
-	m_dataTransmitTimer(0.0f), 
+	m_dataTransmitTimer(60.0f), 
 	m_gameStateTimer(0.0f),
-	m_enemyCount(1)
+	m_enemyCount(1),
+	m_hit(0)
 {
 	srand(static_cast<unsigned int>(time(NULL)));
 	m_camera.InitCameraPerspective(80.0f, 1440.0f / 900.0f, 0.1f, 5000.0f);
@@ -202,6 +203,24 @@ void Game::InitText()
 	dataTransmissionText.SetSpacing(0.7f);
 	dataTransmissionText.SetPosition(glm::vec2(600.0f, 40.0f));
 	m_texts.push_back(dataTransmissionText);
+
+	Text testText;
+	testText.Configure("res/Fonts/Roboto-BoldItalic.ttf");
+	testText.SetText("fuckyou");
+	testText.SetScale(0.5f);
+	testText.SetColor(glm::vec3(1.0f, 1.0f, 1.0f));
+	testText.SetSpacing(0.7f);
+	testText.SetPosition(glm::vec2(625.0f, 850.0f));
+	m_texts.push_back(testText);
+
+	Text finishText;
+	finishText.Configure("res/Fonts/Roboto-BoldItalic.ttf");
+	finishText.SetText("Times up.");
+	finishText.SetScale(1.0f);
+	finishText.SetColor(glm::vec3(1.0f, 1.0f, 1.0f));
+	finishText.SetSpacing(1.4f);
+	finishText.SetPosition(glm::vec2(625.0f, 500.0f));
+	m_texts.push_back(finishText);
 }
 
 void Game::InitMultiRenderTarget()
@@ -283,13 +302,13 @@ void Game::RenderScene()
 	m_flag.AddForce(glm::vec3(0.0f, -0.2f, 0.0f) * 0.25f);
 	m_flag.WindForce(glm::vec3(0.7f, 0.1f, 0.2f) * 0.25f);
 	m_flag.Update();
-	m_flag.Draw(m_camera);
+	//m_flag.Draw(m_camera);
 
 	glEnable(GL_CULL_FACE);
 	glCullFace(GL_BACK);
 
 	// Draw flag pole 
-	m_flagPole.Draw(m_camera, glm::vec3(256.0f, m_terrain.GetHeightOfTerrain(256.0f, 300.0f) + 10.0f, 270.0f));
+	//m_flagPole.Draw(m_camera, glm::vec3(256.0f, m_terrain.GetHeightOfTerrain(256.0f, 300.0f) + 10.0f, 270.0f));
 
 	// Draw big rocks around the corners
 	for (auto i : m_mountainRocks)
@@ -325,7 +344,7 @@ void Game::RenderScene()
 
 	Renderer::GetInstance().GetComponent(AMMO).Draw(m_cameraHUD);
 	Renderer::GetInstance().GetComponent(HEALTH).Draw(m_cameraHUD);
-	Renderer::GetInstance().GetComponent(SATURN_RINGS).Draw(m_camera);
+	//Renderer::GetInstance().GetComponent(SATURN_RINGS).Draw(m_camera);
 	Renderer::GetInstance().GetComponent(SATURN).GetTransformComponent().GetRot().y += 2.0f * m_deltaTime;
 	//Renderer::GetInstance().GetComponent(SATURN).Draw(m_camera, glm::vec3(-700.0f, 700.0f, 0.0f));
 
@@ -358,10 +377,12 @@ void Game::RenderScene()
 
 	// Text updates
 	// [0] : Ammo, [1] : Health, [2] : Data transmission percentage
-	m_texts[0].SetText(std::to_string(Player::GetInstance().GetCurrWeapon().GetAmmoCount()));
+	//m_texts[0].SetText(std::to_string(Player::GetInstance().GetCurrWeapon().GetAmmoCount()));
+	m_texts[0].SetText("infinite");
 	m_texts[0].Render();
 
-	m_texts[1].SetText(std::to_string(Player::GetInstance().GetHealth()));
+	//m_texts[1].SetText(std::to_string(Player::GetInstance().GetHealth()));
+	m_texts[1].SetText(std::to_string((int)m_dataTransmitTimer) + "s");
 	m_texts[1].Render();
 
 	if (m_dataTransmitTimer < 100)
@@ -374,7 +395,12 @@ void Game::RenderScene()
 		m_texts[2].SetText("Data transferred! Defeat all remaining foes");
 	}
 
-	m_texts[2].Render();
+	//m_texts[2].Render();
+	m_texts[3].SetText("targets hit: " + std::to_string((int)m_hit) );
+	m_texts[3].Render();
+
+	//m_texts[4].Render();
+
 }
 
 void Game::UpdateGame()
@@ -383,16 +409,19 @@ void Game::UpdateGame()
 	Player::GetInstance().Update(m_camera, m_terrain, m_deltaTime, GetFrameEvents());
 
 	if (m_enemies[alive_enemies[0]]->GetDeath() == true) {
+		m_hit++;
 		m_enemies[dead_enemies.back()]->SetDeath(false);
 		std::swap(dead_enemies.back(), alive_enemies[0]);
 		std::random_shuffle(dead_enemies.begin(), dead_enemies.end());
 	}
-	else if (m_enemies[alive_enemies[1]]->GetDeath() == true) {
+	if (m_enemies[alive_enemies[1]]->GetDeath() == true) {
+		m_hit++;
 		m_enemies[dead_enemies.back()]->SetDeath(false);
 		std::swap(dead_enemies.back(), alive_enemies[1]);
 		std::random_shuffle(dead_enemies.begin(), dead_enemies.end());
 	}
-	else if (m_enemies[alive_enemies[2]]->GetDeath() == true) {
+	if (m_enemies[alive_enemies[2]]->GetDeath() == true) {
+		m_hit++;
 		m_enemies[dead_enemies.back()]->SetDeath(false);
 		std::swap(dead_enemies.back(), alive_enemies[2]);
 		std::random_shuffle(dead_enemies.begin(), dead_enemies.end());
@@ -491,9 +520,23 @@ void Game::UpdateGame()
 	Audio::GetInstance().Update();
 
 	// Update data transmitter 
-	m_dataTransmitTimer += 0.59f * m_deltaTime;
+	m_dataTransmitTimer -= 1.0f * m_deltaTime;
+
+	if (m_dataTransmitTimer <= 0) {
+		
+		m_gameStateTimer += 1.15f * m_deltaTime;
+		m_texts[4].Render();
+		if (m_gameStateTimer >= 5.0f)
+		{
+			FreeMouseCursor();
+			m_gameStateTimer = 0.0f;
+			Audio::GetInstance().StopSound(3);
+			m_gameState = GameState::MAIN_MENU;
+		}
+	}
 
 	// Check if win condition is met (if the data was sent in full and all enemies have been neutralized)
+	/*
 	if (m_dataTransmitTimer >= 100)
 	{
 		bool m_endGame = false;
@@ -527,7 +570,7 @@ void Game::UpdateGame()
 			}
 		}
 	}
-
+	*/
 	GetFrameEvents().clear();
 }
 
@@ -554,9 +597,10 @@ void Game::RestartGame()
 		m_enemies.at(i)->SetRespawnStatus(true);
 	}
 
-	m_dataTransmitTimer = 0.0f;
+	m_dataTransmitTimer = 60.0f;
 	m_enemySpawnTimer = 0.0f;
 	m_enemyCount = 1;
+	m_hit = 0;
 
 	// Ensure main menu music's channel is stopped
 	Audio::GetInstance().StopSound(2);
