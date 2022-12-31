@@ -3,7 +3,11 @@
 #include "Utils.h"
 #include "Dependencies/SDL2/include/SDL.h"
 #include "Audio.h"
+#include <iostream>
 
+float count = 0;
+bool bullet;
+glm::vec3 dir(0.0f);
 Player::Player() :
 	m_jumpHeight(50.0f),
 	m_upwardSpeed(0.0f),
@@ -45,6 +49,7 @@ void Player::Init(Camera& cam, glm::vec3 initialPosition)
 	m_spotLight = new SpotLight();
 	m_spotLight->Configure(glm::vec3(5.0f, 5.0f, 5.0f), glm::vec3(1.0f, 1.0f, 1.0f), 1.0f, 0.027f, 0.0028f, 22.5f, 25.0f);
 }
+
 
 void Player::Update(Camera& cam, Terrain& terrain, float dt, std::vector<SDL_Event> events)
 {
@@ -90,6 +95,10 @@ void Player::Update(Camera& cam, Terrain& terrain, float dt, std::vector<SDL_Eve
 
 	// Update current weapon
 	m_currWeapon->Update(cam, dt);
+
+
+
+
 
 	// Check if player is swapping weapons
 	if (m_swapping)
@@ -146,9 +155,29 @@ void Player::Update(Camera& cam, Terrain& terrain, float dt, std::vector<SDL_Eve
 		}
 	}
 
+	if (m_currWeapon->GetCurrFireRateTime() > m_currWeapon->GetFireRate() && m_firing) {
+		count = 0.0f;
+		std::cout << "hello" << std::endl;
+	}
+	else {
+		count++;
+	}
+	if (count < 20) {
+		glm::mat4 model(1.0f);
+		glm::mat4 invViewMat = glm::inverse(cam.GetViewMatrix());
+		dir = cam.GetCameraForward();
+		dir = glm::vec4(dir, 1.0f) * invViewMat;
+		std::cout << dir.x << " " << dir.y << " " << dir.z << std::endl;
+		glm::mat4 translation = glm::translate(glm::vec3(0.9f + 20 * count * dir.x, -1.4f + 20 * count * dir.y, -6.5f + 20 * count * dir.z));
+		glm::mat4 scaleMat = glm::scale(glm::vec3(0.3f, 0.3f, 0.3f));
+		model = invViewMat * translation * scaleMat;
+		Renderer::GetInstance().GetComponent(18).Draw(model, cam, glm::vec3(0.0f, 0.0f, 0.0f));
+	}
+
 	// Check if player is firing
 	if (m_firing && !m_reloading && !m_swapping)
 	{
+
 		m_currWeapon->Fire(m_currWeapon->GetModel(), cam, dt, m_firing, m_reloading);
 	}
 

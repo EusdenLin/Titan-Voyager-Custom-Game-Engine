@@ -41,6 +41,7 @@ void Engine::LoadApplicationResources()
 	bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile("res/Textures/AboutBackground.png", "aboutMenu"); assert(bUnitTest);
 	bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile("res/Textures/PlayerDeathScreen.png", "playerDead"); assert(bUnitTest); 
 	bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile("res/Textures/VictoryScreen.png", "victorious"); assert(bUnitTest);
+	bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile("res/Textures/cyan.png", "cyan"); assert(bUnitTest);
 
 	// Terrain textures
 	bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile("res/Textures/soil01.jpg", "soil"); assert(bUnitTest);
@@ -49,7 +50,7 @@ void Engine::LoadApplicationResources()
 	bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile("res/Textures/soil03_NormalMap.jpg", "grassNormalMap"); assert(bUnitTest);
 	bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile("res/Textures/soil04.jpg", "soil4"); assert(bUnitTest);
 	bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile("res/Textures/blendMap.png", "blendMap"); assert(bUnitTest);
-	bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile("res/Textures/floor.jpg", "floor"); assert(bUnitTest);
+	
 
 	std::vector<char*> skyboxFaces = 
 	{

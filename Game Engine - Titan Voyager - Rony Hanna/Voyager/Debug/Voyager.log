@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  Game.cpp
 C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
 C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
@@ -8,3 +9,10 @@ C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Compute
 C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(594,29): warning C4018: '<': signed/unsigned 不相符
 C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Game.cpp(676,4): warning C4065: switch 陳述式包含 'default'，但沒有 'case' 標籤
   Voyager.vcxproj -> C:\Users\林佑庭\OneDrive - National Chiao Tung University\NCTU\四上\Computer Graphics\final project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe
+=======
+﻿  Player.cpp
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Dependencies\assimp\include\assimp\defs.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.h(29,35): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Voyager\Player.cpp(60,15): warning C4834: discarding return value of function with 'nodiscard' attribute
+  Voyager.vcxproj -> C:\Users\Tree\OneDrive - nctu.edu.tw\7Senior\計圖學\project\Titan-Voyager-Custom-Game-Engine\Game Engine - Titan Voyager - Rony Hanna\Debug\Voyager.exe
+>>>>>>> shawn
