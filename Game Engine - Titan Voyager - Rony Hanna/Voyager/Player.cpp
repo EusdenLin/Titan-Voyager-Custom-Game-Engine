@@ -157,7 +157,6 @@ void Player::Update(Camera& cam, Terrain& terrain, float dt, std::vector<SDL_Eve
 
 	if (m_currWeapon->GetCurrFireRateTime() > m_currWeapon->GetFireRate() && m_firing) {
 		count = 0.0f;
-		std::cout << "hello" << std::endl;
 	}
 	else {
 		count++;
@@ -167,7 +166,7 @@ void Player::Update(Camera& cam, Terrain& terrain, float dt, std::vector<SDL_Eve
 		glm::mat4 invViewMat = glm::inverse(cam.GetViewMatrix());
 		dir = cam.GetCameraForward();
 		dir = glm::vec4(dir, 1.0f) * invViewMat;
-		std::cout << dir.x << " " << dir.y << " " << dir.z << std::endl;
+		//std::cout << dir.x << " " << dir.y << " " << dir.z << std::endl;
 		glm::mat4 translation = glm::translate(glm::vec3(0.9f + 20 * count * dir.x, -1.4f + 20 * count * dir.y, -6.5f + 20 * count * dir.z));
 		glm::mat4 scaleMat = glm::scale(glm::vec3(0.3f, 0.3f, 0.3f));
 		model = invViewMat * translation * scaleMat;
