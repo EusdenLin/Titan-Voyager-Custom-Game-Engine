@@ -54,9 +54,9 @@ void Engine::LoadApplicationResources()
 
 	std::vector<char*> skyboxFaces = 
 	{
-		"res/Textures/Skyboxes/cloudy/rot90/right.jpg", "res/Textures/Skyboxes/cloudy/rot90/left.jpg", 
-		"res/Textures/Skyboxes/cloudy/rot90/top.jpg", "res/Textures/Skyboxes/cloudy/rot90/bottom.jpg", 
-		"res/Textures/Skyboxes/cloudy/rot90/front.jpg", "res/Textures/Skyboxes/cloudy/rot90/back.jpg"
+		"res/Textures/Skyboxes/cloudy/right.jpg", "res/Textures/Skyboxes/cloudy/left.jpg", 
+		"res/Textures/Skyboxes/cloudy/top.jpg", "res/Textures/Skyboxes/cloudy/bottom.jpg", 
+		"res/Textures/Skyboxes/cloudy/front.jpg", "res/Textures/Skyboxes/cloudy/back.jpg"
 	};
 
 	std::vector<char*> skyboxIDs = { "skybox", "skybox1", "skybox2", "skybox3", "skybox4", "skybox5" };

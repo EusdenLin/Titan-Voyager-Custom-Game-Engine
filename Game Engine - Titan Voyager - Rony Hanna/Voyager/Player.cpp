@@ -161,16 +161,16 @@ void Player::Update(Camera& cam, Terrain& terrain, float dt, std::vector<SDL_Eve
 	else {
 		count++;
 	}
+	glm::mat4 model(1.0f);
+	glm::mat4 invViewMat = glm::inverse(cam.GetViewMatrix());
+	dir = cam.GetCameraForward();
+	dir = glm::vec4(dir, 1.0f) * invViewMat;
+	//std::cout << dir.x << " " << dir.y << " " << dir.z << std::endl;
+	glm::mat4 translation = glm::translate(glm::vec3(0.9f + 15 * count * dir.x, -1.4f + 15 * count * dir.y, -6.5f + 15 * count * dir.z));
+	glm::mat4 scaleMat = glm::scale(glm::vec3(0.3f, 0.3f, 0.3f));
+	model = invViewMat * translation * scaleMat;
 	if (count < 20) {
-		glm::mat4 model(1.0f);
-		glm::mat4 invViewMat = glm::inverse(cam.GetViewMatrix());
-		dir = cam.GetCameraForward();
-		dir = glm::vec4(dir, 1.0f) * invViewMat;
-		//std::cout << dir.x << " " << dir.y << " " << dir.z << std::endl;
-		glm::mat4 translation = glm::translate(glm::vec3(0.9f + 20 * count * dir.x, -1.4f + 20 * count * dir.y, -6.5f + 20 * count * dir.z));
-		glm::mat4 scaleMat = glm::scale(glm::vec3(0.3f, 0.3f, 0.3f));
-		model = invViewMat * translation * scaleMat;
-		Renderer::GetInstance().GetComponent(18).Draw(model, cam, glm::vec3(0.0f, 0.0f, 0.0f));
+		Renderer::GetInstance().GetComponent(18).Draw(model, cam, glm::vec3(0.0f, 0.0f, 0.0f), false, count);
 	}
 
 	// Check if player is firing

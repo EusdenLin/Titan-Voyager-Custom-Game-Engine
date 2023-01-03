@@ -96,6 +96,24 @@ void GameObject::CreateGameObj(std::vector<Vertex> verts, GLuint numOfVertices, 
 	glBindVertexArray(0);
 }
 
+void GameObject::Draw(glm::mat4 model, Camera& cam, glm::vec3 lightPos, bool explode, float time)
+{
+	this->shaderComponent.ActivateProgram();
+	this->m_textureComponent.ActivateTexture();
+	this->shaderComponent.SetMat4("projection", cam.GetProjectionMatrix());
+	this->shaderComponent.SetMat4("view", cam.GetViewMatrix());
+	this->shaderComponent.SetMat4("model", model);
+	this->shaderComponent.SetVec3("lightPos", lightPos);
+	this->shaderComponent.SetVec3("viewPos", cam.GetCameraPos());
+	this->shaderComponent.SetBool("explode", explode);
+	this->shaderComponent.SetFloat("time", time);
+	glBindVertexArray(m_vao);
+	glDrawElements(GL_TRIANGLES, m_numOfIndices, GL_UNSIGNED_INT, nullptr);
+	glBindVertexArray(0);
+
+	this->shaderComponent.DeactivateProgram();
+}
+
 void GameObject::Draw(glm::mat4 model, Camera& cam, glm::vec3 lightPos)
 {
 	this->shaderComponent.ActivateProgram();

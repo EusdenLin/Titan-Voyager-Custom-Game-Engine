@@ -79,6 +79,9 @@ void Game::InitMeshes()
 	std::vector<char*> muzzleFlashShader{ "res/Shaders/Muzzle Flash Shader/VertexShaderMuzzleFlash.vs", "res/Shaders/Muzzle Flash Shader/FragmentShaderMuzzleFlash.fs" };
 	std::vector<char*> enemyShader{ "res/Shaders/EnemyVertexShader.vs", "res/Shaders/EnemyFragmentShader.fs" };
 	std::vector<char*> postProcessingShader{ "res/Shaders/PostProcessingVertexShader.vs", "res/Shaders/PostProcessingFragmentShader.fs" };
+	std::vector<char*> bulletShader{ "res/Shaders/bullet.vs", "res/Shaders/bullet.fs" };
+
+
 
 	// Initialize the meshes
 	Renderer::GetInstance().InitMesh(QUAD, "saturnRings", ++id, defShader, glm::vec3(200.0f, 360.0f, -700.0f), glm::vec3(-65.0f, 0.0f, 0.0f), glm::vec3(640.0f, 640.0f, 640.0f));
@@ -99,7 +102,7 @@ void Game::InitMeshes()
 	Renderer::GetInstance().InitMesh(QUAD, "playerDead", ++id, hudShader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(17.0f, 17.0f, 17.0f));
 	Renderer::GetInstance().InitMesh(QUAD, "victorious", ++id, hudShader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(17.0f, 17.0f, 17.0f));
 
-	Renderer::GetInstance().InitMesh(SPHERE, "cyan", ++id, unlitShader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f));
+	Renderer::GetInstance().InitMesh(SPHERE, "cyan", ++id, bulletShader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f));
 
 	// Enemy ID registeration [100, 130] inclusively 
 	id = 100;

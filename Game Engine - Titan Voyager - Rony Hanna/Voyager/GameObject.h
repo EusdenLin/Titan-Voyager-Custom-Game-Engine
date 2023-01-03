@@ -21,6 +21,7 @@ public:
 
 	void CreateGameObj(std::vector<Vertex>, GLuint numOfVertices, unsigned int* indices, GLuint numOfIndices, bool bInstancing = false);
 	void Draw(Camera& cam, glm::vec3 lightPos = glm::vec3(0.0f, 0.0f, 0.0f), bool bNormalMapping = false, SpotLight* spotlight = nullptr, bool postProcessing = false, GLuint postProcessingTexId = 0);
+	void Draw(glm::mat4 model, Camera& cam, glm::vec3 lightPos, bool explode, float time);
 	void Draw(glm::mat4 model, Camera& cam, glm::vec3 lightPos);
 	void RawDraw();
 	void DrawInstanced(glm::mat4 proj, glm::mat4 view);
